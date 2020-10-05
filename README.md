@@ -1,5 +1,5 @@
 
-Dockerfile settes opp slik at den byggers som multi stage:
+Dockerfile settes opp slik at den bygges som multi stage:
 
     FROM maven:3.6-jdk-11 as builder
     WORKDIR /app
