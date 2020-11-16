@@ -3,9 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
 
-    <groupId>org.example</groupId>
-    <artifactId>devOps-hello-world-gcloud</artifactId>
+    <groupId>no.devops.eksamen</groupId>
+    <artifactId>devOps-eksamen</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
@@ -64,6 +65,25 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+
+        <!-- Logz.io -->
+
+        <dependency>
+            <groupId>io.logz.logback</groupId>
+            <artifactId>logzio-logback-appender</artifactId>
+            <version>1.0.24</version>
+        </dependency>
+
+        <!-- Micrometer Metrics -->
+
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-influx</artifactId>
+            <version>1.5.5</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
